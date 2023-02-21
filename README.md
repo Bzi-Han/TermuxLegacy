@@ -48,4 +48,4 @@
 
 服务启动好后按照上面的步骤进行即可，但需将`https://bzi-han.github.io/TermuxLegacy`替换成你的服务地址，例如：`http://192.168.1.1:8000`。
 
-如果你使用的是`termux-usage-legacy-repositories.sh`脚本，则需要将`baseUrl`的值改为你的服务地址，然后按照上面的步骤进行。
+如果你使用的是`termux-usage-legacy-repositories.sh`脚本，则需要将`baseUrl`的值改为你的服务地址，然后按照上面的步骤进行，例如：`sed -i 's/https:\/\/bzi-han.github.io\/TermuxLegacy/http:\/\/192.168.1.1:8000/g' ./termux-usage-legacy-repositories.sh`
