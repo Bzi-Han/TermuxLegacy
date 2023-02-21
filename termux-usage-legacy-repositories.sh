@@ -1,5 +1,5 @@
 #!/bin/bash
-baseUrl="https://bzi-han.github.io/termuxlegacy"
+baseUrl="https://bzi-han.github.io/TermuxLegacy"
 
 mainRepository="deb $baseUrl/termux-repositories-legacy/webroot/termux-packages stable main"
 gameRepository="deb $baseUrl/termux-repositories-legacy/webroot/game-packages-21 games stable"
