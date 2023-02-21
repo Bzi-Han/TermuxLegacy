@@ -1,0 +1,18 @@
+Codename: stable
+Version: 1
+Architectures: all arm i686 aarch64 x86_64
+Description: Main repository
+Suite: stable
+Date: Mon, 23 Dec 2019 22:46:08 UTC
+Acquire-By-Hash: yes
+SHA256:
+ cbe632a118b7c0b2a5712eb9a8156c58fef8a7382964e820ca2eefa0c8fc590c 43343 main/binary-all/Packages
+ 6fa4c1cdc7737bb477ecb99165cbc70fca1123331d40469dd8dfaecde29fee54 9760 main/binary-all/Packages.xz
+ c4451ba973c7286b72583bce90faca149e4c02e05296802c58a0f504c23d4c11 366781 main/binary-arm/Packages
+ f2b25a922d6d8132cee601aa2ec3ac8fe980984c944694585c4e4d0a2ac9acbf 81564 main/binary-arm/Packages.xz
+ 7f39a94e10f8911eef18d4eae181c00e44d71c31c7091e96cffdd21c54c33216 369485 main/binary-i686/Packages
+ fdf38545727a6083c88509d698879c14a3f6a510270296332db8f6ed02513b87 81496 main/binary-i686/Packages.xz
+ 0b4368980bfcf823fe974d6c47a7de0265c2922a0275b9d559547f1bfdf4f3b2 378318 main/binary-aarch64/Packages
+ 4236f3508226ed79befd9a7ab1e25437d9c814cb05f9018616441e376923cf9e 81808 main/binary-aarch64/Packages.xz
+ 187ba130bcc7bfdaa0e9646b9d19114b36768e0b49e642218ed4aa0ece916f68 375290 main/binary-x86_64/Packages
+ cb0cfb0396591e21e2a922e893e2752afd0b0b0e5b18c840a2337b1b95aecfc0 81752 main/binary-x86_64/Packages.xz
