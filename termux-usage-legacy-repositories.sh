@@ -5,7 +5,7 @@ mainRepository="deb $baseUrl/termux-repositories-legacy/webroot/termux-packages 
 gameRepository="deb $baseUrl/termux-repositories-legacy/webroot/game-packages-21 games stable"
 scienceRepository="deb $baseUrl/termux-repositories-legacy/webroot/science-packages-21 science stable"
 
-# rootRepository=""
+rootRepository="deb $baseUrl/termux-repositories-legacy/webroot/termux-root-packages-21 root stable"
 
 # x11Repository=""
 # unstableRepository=""
@@ -46,11 +46,18 @@ if [ -f "$PREFIX/etc/apt/sources.list.d/science.list" ]; then
 fi
 echo $scienceRepository > $PREFIX/etc/apt/sources.list.d/termux-legacy-science.list
 
+# root repository
+if [ -f "$PREFIX/etc/apt/sources.list.d/root.list" ]; then
+    mv $PREFIX/etc/apt/sources.list.d/root.list $PREFIX/etc/apt/sources.list.d/root.list.bak
+fi
+echo $rootRepository > $PREFIX/etc/apt/sources.list.d/termux-legacy-root.list
+
 if [[ $EUID -eq 0 ]]; then
     echo "[*] Changing files ownership..."
     chown 10143:10143 $PREFIX/etc/apt/sources.list.d/termux-legacy-main.list
     chown 10143:10143 $PREFIX/etc/apt/sources.list.d/termux-legacy-game.list
     chown 10143:10143 $PREFIX/etc/apt/sources.list.d/termux-legacy-science.list
+    chown 10143:10143 $PREFIX/etc/apt/sources.list.d/termux-legacy-root.list
     echo "[+] Change succeeded."
 fi
 echo "[+] Install successfully."

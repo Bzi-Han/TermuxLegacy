@@ -26,6 +26,7 @@
     + `echo "deb https://bzi-han.github.io/TermuxLegacy/termux-repositories-legacy/webroot/termux-packages stable main" > $PREFIX/etc/apt/sources.list.d/termux-legacy-main.list`
     + `echo "deb https://bzi-han.github.io/TermuxLegacy/termux-repositories-legacy/webroot/game-packages-21 games stable" > $PREFIX/etc/apt/sources.list.d/termux-legacy-game.list`
     + `echo "deb https://bzi-han.github.io/TermuxLegacy/termux-repositories-legacy/webroot/science-packages-21 science stable" > $PREFIX/etc/apt/sources.list.d/termux-legacy-science.list`
+    + `echo "deb https://bzi-han.github.io/TermuxLegacy/termux-repositories-legacy/webroot/termux-root-packages-21 root stable" > $PREFIX/etc/apt/sources.list.d/termux-legacy-root.list`
 5. 更新源
     + `apt-get update && apt-get upgrade -y`
 
