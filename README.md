@@ -50,3 +50,12 @@
 服务启动好后按照上面的步骤进行即可，但需将`https://bzi-han.github.io/TermuxLegacy`替换成你的服务地址，例如：`http://192.168.1.1:8000`。
 
 如果你使用的是`termux-usage-legacy-repositories.sh`脚本，则需要将`baseUrl`的值改为你的服务地址，然后按照上面的步骤进行，例如：`sed -i 's/https:\/\/bzi-han.github.io\/TermuxLegacy/http:\/\/192.168.1.1:8000/g' ./termux-usage-legacy-repositories.sh`
+
+## 直接安装版
+
+`termux-v0.79-offline-bootstraps-noroot.apk`属于直接安装就能使用的修改版，修改内容为虚拟环境的apt配置，将其默认的仓库地址设置为此仓库来实现。
+
+相关的具体内容：
+
++ [TermuxLegacyBootstrap](https://github.com/Bzi-Han/TermuxLegacyBootstrap)
++ [修改App制作直接安装版](https://bzi-han.github.io/2023/03/16/%E6%BC%94%E7%A4%BA-%E4%BD%BF%E7%94%A8Github-Pages%E9%85%8D%E7%BD%AEAndroid6-0-Termux%E6%97%A7%E4%BB%93%E5%BA%93-%E5%AE%98%E6%96%B9%E4%B8%8D%E5%86%8D%E7%BB%B4%E6%8A%A4/#%E4%BF%AE%E6%94%B9App%E5%88%B6%E4%BD%9C%E7%9B%B4%E6%8E%A5%E5%AE%89%E8%A3%85%E7%89%88)
